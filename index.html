@@ -88,7 +88,7 @@
     }
     resolve();
   })
-  Promise.all([fetch('_footer.html?lang=' + encodeURIComponent(lang)), loaded]).then(([response]) => {
+  Promise.all([fetch('footer.html?lang=' + encodeURIComponent(lang)), loaded]).then(([response]) => {
     if (response.status !== 200) {
       return;
     }
